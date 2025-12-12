@@ -335,9 +335,31 @@ h3 {
     position: relative;
 }
 
+.image-hero {
+    position: relative;
+}
+
 .me {
     width: 530px;
     margin-right: -30px;
+}
+
+.color-wheel {
+    position: absolute;
+    width: 135px;
+    right: -6%;
+    top: 1rem;
+    animation: spin 3s linear infinite;
+    transform-origin: center center;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .badge {
@@ -876,6 +898,20 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px; 
+    background: linear-gradient(to top, #0D0D12 0%, rgba(13, 13, 18, 0.8) 30%, rgba(13, 13, 18, 0.5) 60%, rgba(13, 13, 18, 0) 100%);
+    z-index: 1;
+    pointer-events: none; 
 }
 
 .pricing-box {
@@ -1474,7 +1510,7 @@ footer {
     }
 
     .main-title {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
         width: 100%;
         zoom: 1.2;
     }
@@ -1489,6 +1525,10 @@ footer {
     .me-preview {
         display: flex;
         flex-direction: column;
+    }
+
+    .color-wheel {
+        width: 115px;
     }
 
     .cards {

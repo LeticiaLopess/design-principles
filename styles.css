@@ -580,7 +580,7 @@ h3 {
     max-width: 30rem;
 }
 
-.text-pricing {
+.text-pricing,  .text-author {
     font-size: 18px;
     max-width: 29rem;
 }
@@ -697,10 +697,6 @@ h3 {
     font-weight: 600;
     transform: rotate(-6deg);
     font-size: 0.875rem;
-}
-
-.learning {
-
 }
 
 .learning-points {
@@ -1185,6 +1181,10 @@ footer {
     flex-direction: column;    
 }
 
+.text-center {
+    text-align: center;
+}
+
 .level {
     font-size: 13px !important;
     font-weight: 600;
@@ -1307,6 +1307,10 @@ footer {
     width: 350px;
 }
 
+.mw-33 {
+    max-width: 33rem !important;
+}
+
 .author-content .column p {
     padding-bottom: 1rem;
     max-width: 600px;
@@ -1363,6 +1367,30 @@ footer {
 .instagram-button span {
     font-family: Poppins, sans-serif;
     font-size: 16px;
+}
+
+.thanks-container {
+    background-image: url(./assets/images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    height: auto;
+    text-align: center; 
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanks-message {
+    max-width: 500px; 
+    margin: 20px auto; 
+    font-size: 18px;
+}
+
+.font-40 {
+    font-size: 40px
 }
 
 @keyframes scale-in {

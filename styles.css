@@ -1856,6 +1856,11 @@ footer {
         flex-direction: column;
         justify-content: center;
     }
+
+    .salary, .level, .level-text, .numeration-benefits {
+        display: block;
+        text-align: left !important;
+    }
 }
 
 @media (min-width: 800px) and (max-width: 1100px) {

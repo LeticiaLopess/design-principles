@@ -223,6 +223,10 @@ h3 {
     margin-top: 3rem;
 }
 
+.pb-0 {
+    padding-bottom: 0rem !important;
+}
+
 .pb-1 {
     padding-bottom: 1rem;
 }
@@ -254,6 +258,7 @@ h3 {
         0px -0.927px 2.748px 0px rgba(231, 48, 202, 0.07);
     display: inline-flex;
     align-items: center;
+    z-index: 100;
 }
 
 .cta-button:hover {
@@ -1369,8 +1374,8 @@ footer {
     height: fit-content;
 }
 
-.mb-0 {
-    margin-bottom: 0;
+.problem {
+    padding: 1rem 1rem 6rem 1rem;
 }
 
 .mb-2 {
@@ -1499,7 +1504,21 @@ footer {
     color: #595963;
 }
 
+.reasons-title, .solution-title {
+    margin-bottom: 3rem !important;
+}
+
 @media (max-width: 800px) {
+    .mb-1 {
+        margin-bottom: 1.5rem !important;
+    }
+
+    .text-pricing,  .text-author {
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.3;
+    }
+
     .hero {
         background-image: url(./assets/images/background-mobile.png);
         background-size: cover;
@@ -1574,6 +1593,11 @@ footer {
         flex-direction: column;
     }
 
+    .benefits-content .column span {
+        text-align: center;
+        display: block;  
+    }
+
     .color-wheel {
         width: 115px;
         top: 2rem;
@@ -1612,8 +1636,16 @@ footer {
     }
 
     .text-gradient-high-pink { 
-        font-size: 33px;
+        font-size: 32px;
         text-align: center;
+    }
+
+    .reasons-content {
+        padding: 3rem 0;
+    }
+
+    .mb-0 {
+        margin-bottom: 0;
     }
 
     .pb-1 {
@@ -1633,8 +1665,26 @@ footer {
         gap: 1.5rem;
     }
 
-    .reasons-title, .title-benefits, .solution-title, .problem-title {
-        text-align: left;
+    .price {
+        text-align: center;
+        padding-top: 0.6rem !important;
+    }
+
+    .price .installment span {
+        font-size: 60px;
+    }
+
+    .problem-title {
+        padding-top: 2rem;
+    }
+    
+    .presentation-content { 
+        gap: 3rem;
+    }
+
+    .reasons-title, .title-benefits, .solution-title, .problem-title, .title-pricing {
+        text-align: center;
+        line-height: 1.2;
     }
 
     .reasons-card {
@@ -1651,11 +1701,21 @@ footer {
     }
 
     .first-presentation {
-        margin-top: 2rem;
+        margin-top: 0;
     }
 
     .first-presentation-text, .second-presentation-text {
-        margin-top: 2rem;
+        margin-top: 2.5rem;
+        line-height: 1.2;
+    }
+    
+    .text-solution { 
+        font-size: 17px;
+        line-height: 1.4;
+    }
+
+    .text-presentation {
+        font-size: 16px;
     }
 
     .first-image-presentation {
@@ -1671,13 +1731,14 @@ footer {
         margin: 20px 0 0 0;
     }
 
-    .title-pricing {
-        text-align: left;
+    .card header p {
+        font-size: 20px;
     }
 
     .text-problem {
         font-size: 17px;
-        text-align: start;
+        text-align: center;
+        line-height: 1.3;
     }
 
     .pricing-content {
@@ -1699,20 +1760,28 @@ footer {
         width: 100%;
     }
 
-    .problem, .reasons-content {
-        padding-top: 2rem !important;
+    .problem, .reasons-content, .author, .pricing-content .column p {
+        padding-top: 0rem !important;
+    }
+
+    .benefits, .solution {
+        padding: 1rem 1.3rem !important;
+    }
+
+    .subtitle-benefits {
+        font-size: 18px;
+    }
+
+    .title-benefits {
+        padding: 0;
+    }
+
+    .cta-benefits {
+        margin: 0rem 0 3.5rem 0 !important;
     }
 
     .book-img {
         margin-bottom: 2rem;
-    }
-
-    .author {
-        padding-top: 1rem !important;
-    }
-
-    .pricing-content .column p {
-        margin-top: 1rem;
     }
 
     .at-sight {

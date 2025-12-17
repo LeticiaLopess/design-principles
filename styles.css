@@ -1107,10 +1107,6 @@ footer {
     text-align: center;
 }
 
-.footer-logo img {
-    opacity: 0.4;
-}
-
 .footer-text {
     text-align: center;
 }
@@ -1497,7 +1493,39 @@ footer {
 }
 
 .footer-logo img {
-    width: 40px;
+    width: 45px;
+}
+
+.footer-logo img {
+    display: block;
+    animation: logoLightBlink 1.5s ease-in-out infinite;
+}
+
+@keyframes logoLightBlink {
+    0% {
+        opacity: 1;
+        filter: drop-shadow(0 0 0 rgba(231, 48, 202, 0));
+    }
+
+    40% {
+        opacity: 0.95;
+        filter: drop-shadow(0 0 4px rgba(231, 48, 202, 0.35));
+    }
+
+    55% {
+        opacity: 0.9;
+        filter: drop-shadow(0 0 8px rgba(231, 48, 202, 0.6));
+    }
+
+    70% {
+        opacity: 0.95;
+        filter: drop-shadow(0 0 4px rgba(231, 48, 202, 0.35));
+    }
+
+    100% {
+        opacity: 1;
+        filter: drop-shadow(0 0 0 rgba(231, 48, 202, 0));
+    }
 }
 
 .footer-text {
@@ -1563,11 +1591,6 @@ footer {
 
     section {
         padding: 3rem 1.3rem !important;
-    }
-
-    .footer-logo img {
-        width: 35px;
-        opacity: 0.7;
     }
 
     .footer-text {

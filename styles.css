@@ -1678,11 +1678,11 @@ footer {
     }
 
     .problem-title {
-        padding-top: 1rem;
+        padding-top: 3rem;
     }
     
     .presentation-content { 
-        gap: 3rem;
+        gap: 5rem;
     }
 
     .reasons-title, .title-benefits, .solution-title, .problem-title, .title-pricing {

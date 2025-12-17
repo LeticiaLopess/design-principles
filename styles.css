@@ -1505,7 +1505,7 @@ footer {
 }
 
 .reasons-title, .solution-title {
-    margin-bottom: 3rem !important;
+    margin-bottom: 2rem !important;
 }
 
 @media (max-width: 800px) {

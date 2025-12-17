@@ -1533,7 +1533,7 @@ footer {
         margin-top: 0;
         text-align: left;
         font-size: 40px;
-        max-width: 17rem;
+        max-width: 22rem;
     }
 
     .mb-0 {
@@ -1576,9 +1576,8 @@ footer {
     }
 
     .main-title {
-        font-size: 2.4rem;
+        font-size: 3.1rem;
         width: 100%;
-        zoom: 1.2;
     }
 
     .me {
@@ -1652,6 +1651,10 @@ footer {
         padding-bottom: 0;
     }
 
+    .pt-0 {
+        padding-top: 0 !important;
+    }
+
     .mobile {
         display: flex !important;
     }
@@ -1675,7 +1678,7 @@ footer {
     }
 
     .problem-title {
-        padding-top: 2rem;
+        padding-top: 1rem;
     }
     
     .presentation-content { 
@@ -1738,7 +1741,11 @@ footer {
     .text-problem {
         font-size: 17px;
         text-align: center;
-        line-height: 1.3;
+        line-height: 1.4;
+    }
+
+    .mt-1 {
+        margin-top: 1rem;
     }
 
     .pricing-content {
@@ -1764,8 +1771,12 @@ footer {
         padding-top: 0rem !important;
     }
 
-    .benefits, .solution {
-        padding: 1rem 1.3rem !important;
+    .solution {
+        padding: 3.5rem 1.3rem !important;
+    }
+
+    .benefits {
+        padding: 0.5rem 1.3rem 3rem 1.3rem  !important;
     }
 
     .subtitle-benefits {
@@ -1788,7 +1799,11 @@ footer {
         margin-top: 5px !important;
     }
 
-    .presentation, .pricing {
+    .presentation {
+        padding-top: 3rem !important;
+    }
+
+    .pricing {
         padding-top: 1rem !important;
     }
 
@@ -1867,11 +1882,6 @@ footer {
     .main-title {
         font-size: 2.5rem !important;
         width: 100% !important;
-        zoom: 1.1 !important;
-    }
-
-    .hero-title {
-        max-width: 19rem;
     }
 
     .subtitle {
@@ -1911,10 +1921,6 @@ footer {
     .main-title {
         font-size: 3.2rem !important;
         width: 100% !important;
-    }
-
-    .hero-title {
-        max-width: 21rem;
     }
 
     .title-presentation {

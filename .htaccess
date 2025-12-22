@@ -1,2 +1,6 @@
 DirectoryIndex index.html
 Options -Indexes
+
+RewriteEngine On
+
+RewriteRule ^bio/?$ /?utm_source=instagram&utm_medium=bio&utm_campaign=ebook [R=301,L]

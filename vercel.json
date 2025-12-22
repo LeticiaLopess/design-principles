@@ -1,0 +1,9 @@
+{
+    "redirects": [
+        {
+            "source": "/bio",
+            "destination": "/?utm_source=instagram&utm_medium=bio&utm_campaign=ebook",
+            "permanent": true
+        }
+    ]
+}

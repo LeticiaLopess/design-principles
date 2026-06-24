@@ -323,7 +323,7 @@ h3 {
 }
 
 .hero {
-    background-image: url(./assets/images/background.png);
+    background-image: url(../assets/images/background.png);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -1462,7 +1462,7 @@ footer {
 }
 
 .thanks-container {
-    background-image: url(./assets/images/background.png);
+    background-image: url(../assets/images/background.png);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;

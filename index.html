@@ -3,627 +3,665 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
-        <title>Leticia Lopes | Princípios de Design</title>
+        <link rel="icon" type="image/png" href="./assets/images/favicon-dev.png" />
+        <title>Leticia Lopes | Software Engineer</title>
         <meta
             name="description"
-            content="Design profissional começa com base. Aprenda os princípios essenciais para parar de se sentir perdido, criar com mais clareza e evoluir para um nível mais profissional."
+            content="Leticia Lopes — Software Engineer Full Stack. Sites, sistemas, apps, APIs e produtos digitais."
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
+            href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Geist:wght@100..900&display=swap"
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
         />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         />
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="./styles.css" />
     </head>
     <body>
-        <div class="container">
-            <section id="hero" class="hero">
-                <div class="hero-content">
-                    <div>
-                        <h1 class="main-title hero-title">
-                            <span class="text-gradient-pink"
-                                >Sem Base, Sem</span
-                            >
-                            <span class="pink-color" data-text="Design!"
-                                >Design!
-                            </span>
-                        </h1>
+        <div id="cursor-glow"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
 
-                        <p class="subtitle">
-                            Muitos designers talentosos ficam estagnados no
-                            mesmo nível porque não dominam os Fundamentos de
-                            Design. Você não precisa ser um deles.
-                        </p>
+        <nav id="nav">
+            <a href="#" class="nav-logo">Leticia<span>.</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#carreira">Carreira</a></li>
+                <li><a href="#stack">Stack</a></li>
+                <li><a href="#processo">Processo</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+            </ul>
+            <a href="https://wa.me/5521979168064?text=Ol%C3%A1%2C%20Leticia!%20Vi%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener" class="nav-cta">
+                <i class="fab fa-whatsapp"></i> Vamos conversar
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
 
-                        <div class="cta-container web">
-                            <button
-                                class="cta-button"
-                                onclick="window.open('https://pay.onprofit.com.br/XAh7hPDQ?off=AIChWu', '_blank')"
-                            >
-                                Quero criar como um profissional!
-                            </button>
-                        </div>
+        <section id="introducao">
+            <canvas id="matrix-canvas" aria-hidden="true"></canvas>
+            <div class="hero-wrap">
+                <div class="hero-left">
+                    <div class="badge-avail reveal">
+                        <span class="dot-green"></span>
+                        Disponível agora
                     </div>
 
-                    <div class="me-preview">
-                        <div class="image-hero">
-                            <img
-                                class="me"
-                                src="./assets/images/me-hero.png"
-                                alt="Leticia"
-                            />
-                            <img
-                                class="color-wheel"
-                                src="./assets/images/color-wheel.png"
-                                alt="Color Wheel"
-                            />
-                        </div>
+                    <h1 class="hero-name reveal d1">
+                        <span class="grad grad-sans" id="decode-first" data-final="Leticia">Leticia</span><br />
+                        <span class="grad" id="decode-last" data-final="Lopes">Lopes</span>
+                    </h1>
 
-                        <div class="cta-container mb-0 mobile">
-                            <button
-                                class="cta-button"
-                                onclick="window.open('https://pay.onprofit.com.br/XAh7hPDQ?off=AIChWu', '_blank')"
-                            >
-                                Quero criar como um profissional!
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Problem Section -->
-            <section id="problem" class="problem">
-                <div class="problem-content">
-                    <h2
-                        class="text-gradient-high-pink problem-title flex-center pb-1"
-                    >
-                        O que separa o amador do profissional é a base.
-                    </h2>
-                    <p class="text-problem">
-                        Todo mundo começa do zero, mas nem todos constroem uma
-                        base sólida. Conhecer os
-                        <b>Princípios de Design</b> permite que você transforme
-                        ideias simples em projetos profissionais. O resultado?
-                        Artes que não são apenas 'bonitinhas', mas que
-                        transmitem credibilidade.
-                    </p>
-                    <div class="cta-container-center web">
-                        <button
-                            class="cta-button"
-                            onclick="window.open('https://pay.onprofit.com.br/XAh7hPDQ?off=AIChWu', '_blank')"
-                        >
-                            Quero criar como um profissional!
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Presentation Section -->
-            <section id="presentation" class="presentation">
-                <div class="presentation-content">
-                    <div class="presentation-row first-presentation">
-                        <img
-                            class="presentation-image first-image-presentation"
-                            src="./assets/images/design1.png"
-                            alt="design"
-                        />
-
-                        <div>
-                            <p
-                                class="text-gradient-high-pink pb-1 title-presentation first-presentation-text"
-                            >
-                                Não é falta de criatividade, é falta de uma base
-                                sólida que sustente suas ideias
-                            </p>
-                            <p class="text-presentation">
-                                Não existem atalhos para um resultado de
-                                qualidade: existem <b>Princípios</b>. Aprender a
-                                usá-los tira o peso do 'acho que ficou bom' e
-                                coloca o controle total do projeto nas suas
-                                mãos.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="presentation-row">
-                        <img
-                            class="presentation-image second-image-presentation mobile"
-                            src="./assets/images/design2.png"
-                            alt="design"
-                        />
-
-                        <div>
-                            <p
-                                class="text-gradient-high-pink pb-1 title-presentation second-presentation-text mw-33"
-                            >
-                                Seu olhar criativo merece ser levado a sério
-                                desde o primeiro projeto
-                            </p>
-                            <p class="text-presentation">
-                                Mesmo sem experiência, é possível criar com
-                                qualidade. Este e-book te mostra como
-                                transformar boas ideias em designs que funcionam
-                                de verdade.
-                            </p>
-                        </div>
-
-                        <img
-                            class="presentation-image second-image-presentation web"
-                            src="./assets/images/design2.png"
-                            alt="design"
-                        />
-                    </div>
-                </div>
-            </section>
-
-            <!-- Solution Section -->
-            <section id="who" class="solution">
-                <div class="solution-content">
-                    <h2
-                        class="text-gradient-high-pink flex-center solution-title mb-0 pb-0"
-                    >
-                        Quem precisa dominar as bases do design?
-                    </h2>
-
-                    <div class="cards">
-                        <div class="row">
-                            <div class="card card-1">
-                                <header>
-                                    <img
-                                        src="./assets/images/map-icon.svg"
-                                        alt="Map Icon"
-                                    />
-                                    <p>Quem não sabe por onde começar</p>
-                                </header>
-                                <main>
-                                    <p>
-                                        Se sente perdido(a) ao criar e não sabe
-                                        por onde começar por falta de uma base
-                                        sólida.
-                                    </p>
-                                </main>
-                            </div>
-
-                            <div class="card card-2">
-                                <header>
-                                    <img
-                                        src="./assets/images/book-icon.svg"
-                                        alt="Map Icon"
-                                    />
-                                    <p>Quem nunca aprendeu design</p>
-                                </header>
-                                <main>
-                                    <p>
-                                        Não entende nada de design, mas quer
-                                        aprender o essencial pra começar e criar
-                                        algo bem feito.
-                                    </p>
-                                </main>
-                            </div>
-
-                            <div class="card card-3">
-                                <header>
-                                    <img
-                                        src="./assets/images/puzzle-icon.svg"
-                                        alt="Map Icon"
-                                    />
-                                    <p>
-                                        Quem já cria, mas não se sente
-                                        profissional
-                                    </p>
-                                </header>
-                                <main>
-                                    <p>
-                                        Sente que o que cria nunca chega no
-                                        nível de um design profissional, sempre
-                                        parece inacabado ou amador.
-                                    </p>
-                                </main>
-                            </div>
-                        </div>
-
-                        <!-- <div class="row">
-                            <div class="card card-4">
-                                <header>
-                                    <img src="./assets/images/like-icon.svg" alt="Map Icon">
-                                    <p>Quem quer entender o que funciona no design</p>
-                                </header>
-                                <main>
-                                    <p>
-                                        Pra quem quer desenvolver um olhar crítico e entender, de forma simples, o que realmente faz um design funcionar.
-                                    </p>
-                                </main>
-                            </div>
-
-                            <div class="card card-5">
-                                <header>
-                                    <img src="./assets/images/pen-icon.svg" alt="Map Icon">
-                                    <p>Quem quer viver de design</p>
-                                </header>
-                                <main>
-                                    <p>
-                                        Quer migrar de área ou começar do zero, mas está perdido sobre o que realmente precisa aprender
-                                    </p>
-                                </main>
-                            </div>
-                            
-                            <div class="card card-6">
-                                <header>
-                                    <img src="./assets/images/tools-icon.svg" alt="Map Icon">
-                                    <p>Quem já é Designer Gráfico ou UI</p>
-                                </header>
-                                <main>
-                                    <p>
-                                        São princípios universais que todo designer, seja gráfico ou UI, precisa dominar.
-                                    </p>
-                                </main>
-                            </div>
-                        </div> -->
-                    </div>
-
-                    <p class="text-solution">
-                        Se você se identificou com pelo menos uma dessas
-                        situações, este conteúdo vai mudar sua forma de criar.
-                        Você vai entender as regras invisíveis de uma arte
-                        profissional e aprender a transformar um rascunho
-                        simples em um projeto que qualquer cliente levaria a
-                        sério.
+                    <p class="hero-role reveal d2">
+                        <strong>Software Engineer</strong>
                     </p>
 
-                    <div class="cta-container-center">
-                        <button
-                            class="cta-button no-solution-gap"
-                            onclick="window.open('https://pay.onprofit.com.br/XAh7hPDQ?off=AIChWu', '_blank')"
-                        >
-                            Quero criar como um profissional!
-                        </button>
+                    <p class="hero-tagline reveal d2">
+                        Por trás de toda empresa que cresce, tem tecnologia que funciona. Construo sites e sistemas para o seu negócio funcionar sem dor de cabeça.
+                    </p>
+
+                    <div class="hero-actions reveal d3">
+                        <a href="#servicos" class="btn-main">
+                            Ver serviços <i class="fas fa-arrow-down"></i>
+                        </a>
+                        <a href="#contato" class="btn-ghost">
+                            Fale comigo <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
+
+                    <div class="hero-socials reveal d4">
+                        <a href="https://github.com/leticialopess" target="_blank" class="soc" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/" target="_blank" class="soc" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://instagram.com/the.leticialopes" target="_blank" class="soc" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/5521979168064?text=Ol%C3%A1%2C%20Leticia!%20Vi%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener" class="soc" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+
                 </div>
-            </section>
 
-            <!-- Benefits Section -->
-            <section id="benefits" class="pt-0 benefits">
-                <div class="benefits-content">
-                    <div class="column">
-                        <h2
-                            class="text-gradient-high-pink title-benefits mb-1 wmb-1"
-                        >
-                            3 razões para você investir no seu futuro como
-                            designer
-                        </h2>
-                        <span>
-                            O que torna o design uma carreira promissora e
-                            atual?
-                        </span>
-                        <img
-                            class="img-benefits"
-                            src="./assets/images/designer3.png"
-                            alt="leticia-designer"
-                        />
-                        <div class="cta-container web">
-                            <button
-                                class="cta-button"
-                                onclick="window.open('https://pay.onprofit.com.br/XAh7hPDQ?off=AIChWu', '_blank')"
-                            >
-                                Quero criar como um profissional!
-                            </button>
-                        </div>
-                    </div>
-                    <div class="benefits-articles column">
-                        <article>
-                            <span class="numeration-benefits">01</span>
-
-                            <h3 class="subtitle-benefits">
-                                Empresas buscam designers que dominam a técnica
-                                e sabem o que estão fazendo.
-                            </h3>
-
-                            <!-- <p class="text-benefits">Empresas precisam de designers que vão além do básico e a demanda por profissionais qualificados cresce a cada dia.</p> -->
-                        </article>
-                        <div class="separator"></div>
-                        <article>
-                            <span class="numeration-benefits">02</span>
-
-                            <h3 class="subtitle-benefits">
-                                Você pode trabalhar de qualquer lugar do mundo
-                                de forma remota.
-                            </h3>
-
-                            <!-- <p class="text-benefits">O design é uma das áreas que mais oferece oportunidades de trabalho remoto.</p> -->
-                        </article>
-                        <div class="separator"></div>
-                        <article>
-                            <span class="numeration-benefits">03</span>
-
-                            <h3 class="subtitle-benefits">
-                                A base certa acaba com o amadorismo. É essa
-                                segurança técnica que faz grandes marcas
-                                contratarem você.
-                            </h3>
-
-                            <!-- <p class="text-benefits">Designers experientes recebem salários acima da média e têm carreira estável.</p> -->
-                        </article>
-
-                        <div class="benefits-footer">
-                            <div class="benefits-cards">
-                                <div class="benefit-card">
-                                    <div class="numeration-container">
-                                        <div class="numeration">|</div>
-                                    </div>
-
-                                    <div class="text-container">
-                                        <span class="salary">2~3k</span>
-                                        <span class="level">Júnior</span>
-                                        <span class="level-text"
-                                            >Iniciante na área</span
-                                        >
-                                    </div>
-                                </div>
-
-                                <div class="benefit-card">
-                                    <div class="numeration-container">
-                                        <div class="numeration">||</div>
-                                    </div>
-
-                                    <div class="text-container">
-                                        <span class="salary">4~7k</span>
-                                        <span class="level">Pleno</span>
-                                        <span class="level-text"
-                                            >Experiente</span
-                                        >
-                                    </div>
-                                </div>
-
-                                <div class="benefit-card">
-                                    <div class="numeration-container">
-                                        <div class="numeration">|||</div>
-                                    </div>
-
-                                    <div class="text-container">
-                                        <span class="salary">7~15k</span>
-                                        <span class="level">Sênior</span>
-                                        <span class="level-text"
-                                            >Muito experiente</span
-                                        >
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="captions">
-                                <span
-                                    >Fontes: Glassdoor, LinkedIn e pesquisas de
-                                    mercado recentes. Os valores apresentados
-                                    são uma média e podem variar com base na
-                                    empresa.</span
-                                >
-                                <span
-                                    >Todos os valores estão em Reais (R$).</span
-                                >
-                            </div>
-
-                            <div class="cta-container cta-benefits mobile">
-                                <button
-                                    class="cta-button"
-                                    onclick="window.open('https://pay.onprofit.com.br/XAh7hPDQ?off=AIChWu', '_blank')"
-                                >
-                                    Quero criar como um profissional!
-                                </button>
-                            </div>
+                <div class="hero-right reveal d2">
+                    <div class="photo-frame">
+                        <div class="photo-inner">
+                            <img src="./assets/images/leticia-lopes.png" alt="Leticia Lopes" />
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Pricing Section -->
-            <section id="pricing" class="pricing">
-                <div class="pricing-content">
-                    <div class="column">
-                        <h2 class="text-gradient-high-pink title-pricing">
-                            Aprenda a criar com olhar de profissional!
-                        </h2>
-                        <p class="text-pricing">
-                            Tenha em mãos o guia prático dos princípios que todo
-                            design de qualidade exige. Pare de criar no
-                            improviso: entenda as regras e domine a técnica para
-                            resultados profissionais.
-                        </p>
-                        <div class="price">
-                            <p class="installment">2x <span>R$ 18,45</span></p>
-                            <p class="at-sight">ou <b>R$ 36,90</b> à vista</p>
-                        </div>
-                        <div class="cta-container mb-0 web">
-                            <button
-                                class="cta-button"
-                                onclick="window.open('https://pay.onprofit.com.br/XAh7hPDQ?off=AIChWu', '_blank')"
-                            >
-                                Quero criar como um profissional!
-                            </button>
-                        </div>
-                    </div>
-                    <div class="column book">
-                        <img
-                            class="book-img"
-                            src="./assets/images/bookup.png"
-                            alt="book"
-                        />
-                        <div class="cta-container mb-0 mobile">
-                            <button
-                                class="cta-button"
-                                onclick="window.open('https://pay.onprofit.com.br/XAh7hPDQ?off=AIChWu', '_blank')"
-                            >
-                                Quero criar como um profissional!
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Reason Section -->
-            <section id="reasons" class="reasons">
-                <div class="reasons-content mt-1">
-                    <h2
-                        class="text-gradient-high-pink reasons-title flex-center mb-1"
-                    >
-                        Um pouco do que você vai aprender
-                    </h2>
-
-                    <div class="reasons-cards">
-                        <div class="reasons-card">
-                            <span>1</span>
-                            <h4>Fundamentos</h4>
-                            <p>
-                                A base sólida para você parar de improvisar e
-                                criar com intenção.
-                            </p>
-                        </div>
-
-                        <div class="reasons-card2">
-                            <span>2</span>
-                            <h4>Visual</h4>
-                            <p>
-                                Combine cores e formas com harmonia para atrair
-                                o olhar do público.
-                            </p>
-                        </div>
-
-                        <div class="reasons-card">
-                            <span>3</span>
-                            <h4>Tipografia</h4>
-                            <p>
-                                Saiba como usar e escolher fontes ideais para
-                                sua mensagem.
-                            </p>
-                        </div>
-
-                        <div class="reasons-card2">
-                            <span>4</span>
-                            <h4>Processo Criativo</h4>
-                            <p>
-                                O passo a passo para organizar suas ideias e
-                                vencer a tela em branco.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Author Section -->
-            <section id="author" class="author">
-                <div class="author-content mt-1">
-                    <div class="column">
-                        <h2 class="text-gradient-high-pink title-author mb-1">
-                            Quem está por trás desse e-book?
-                        </h2>
-                        <p class="text-author">
-                            Oi, eu sou a Leticia! Após anos criando projetos
-                            para os mais diversos nichos, entendi que um design
-                            profissional não depende de dom, mas sim de dominar
-                            os princípios que sustentam qualquer arte.
-                        </p>
-                        <p class="text-author">
-                            Reuni aqui toda a minha experiência para que você
-                            não precise perder tempo tentando adivinhar o que
-                            funciona e o que não funciona.
-                        </p>
-                        <p class="text-author">
-                            Quero te mostrar que o design não precisa ser um
-                            bicho de sete cabeças. Com a base certa, você para
-                            de se sentir perdido e ganha a confiança necessária
-                            para tirar suas ideias do papel. Vamos nessa?
-                        </p>
-                        <div class="cta-container mb-0 web">
-                            <button
-                                class="cta-button"
-                                onclick="window.open('https://pay.onprofit.com.br/XAh7hPDQ?off=AIChWu', '_blank')"
-                            >
-                                Quero criar como um profissional!
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="column author-leticia">
-                        <img
-                            class="leticia"
-                            src="./assets/images/leticia.png"
-                            alt="Leticia Lopes"
-                        />
-
-                        <div class="social-media">
-                            <a
-                                href="https://www.instagram.com/the.leticialopes"
-                                target="_blank"
-                                class="sm-btn instagram-button"
-                            >
-                                <img
-                                    class="icon-instagram"
-                                    src="./assets/images/instagram.svg"
-                                    alt="Instagram Logo"
-                                />
-                                <span>@the.leticialopes</span>
-                                <img
-                                    class="icon-arrow"
-                                    src="./assets/images/arrow-45.svg"
-                                    alt="Arrow 45º"
-                                />
-                            </a>
-
-                            <a
-                                class="sm-btn behance-button"
-                                href="https://www.behance.net/leticiamlopes"
-                                target="_blank"
-                            >
-                                <img
-                                    class="icon-behance"
-                                    src="./assets/images/behance.png"
-                                    alt="Behance Logo"
-                                />
-                            </a>
-                        </div>
-
-                        <!-- <div class="cta-container mb-0 mobile">
-                            <button class="cta-button">
-                                Quero criar como um profissional!
-                            </button>
-                        </div> -->
-                    </div>
-                </div>
-            </section>
-
-            <!-- Footer -->
-            <footer>
-                <div class="footer-content">
-                    <div class="footer-logo logo-blink mobile">
-                        <!-- <img src="./assets/images/design-logo.png" alt="Logo" /> -->
-                        <img
-                            src="./assets/images/design-logo.png"
-                            alt=""
-                            class="logo-glow"
-                            aria-hidden="true"
-                        />
-                    </div>
-
-                    <div class="footer-text">
-                        © Leticia Lopes — Todos os direitos reservados. Este
-                        material é protegido por direitos autorais. A
-                        reprodução, distribuição ou compartilhamento não
-                        autorizado é <b>proibido</b>.
-                    </div>
-                </div>
-            </footer>
-
-            <!-- Floating CTA -->
-            <!-- <div id="floating-cta" class="floating-cta">
-                <button class="secondary-button">
-                    <span>Quero o E-book</span>
-                    <span class="arrow">→</span>
-                </button>
-            </div> -->
+        <div class="ticker-section" aria-hidden="true">
+            <div class="ticker-track" id="ticker-track">
+                <span class="ticker-item">React <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">TypeScript <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">Node.js <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">Next.js <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">PostgreSQL <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">Docker <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">AWS <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">REST API <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">CI/CD <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">React <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">TypeScript <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">Node.js <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">Next.js <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">PostgreSQL <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">Docker <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">AWS <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">REST API <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">CI/CD <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">React <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">TypeScript <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">Node.js <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">Next.js <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">PostgreSQL <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">Docker <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">AWS <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">REST API <span class="ticker-sep">◆</span></span>
+                <span class="ticker-item">CI/CD <span class="ticker-sep">◆</span></span>
+            </div>
         </div>
 
-        <script src="script.js"></script>
+        <section id="sobre" class="section-light">
+            <div class="inner">
+                <div class="sobre-top reveal">
+                    <h2 class="sobre-heading">
+                        Sobre mim.
+                    </h2>
+                    <span class="sobre-tag">// Sobre</span>
+                </div>
+                <p class="sobre-sub reveal d1">Criando soluções digitais direto do Brasil para o mundo. Sou desenvolvedora full stack e atendo empresas brasileiras e internacionais.</p>
+
+                <div class="sobre-grid">
+                    <div class="sobre-steps">
+                        <div class="sobre-step active reveal">
+                            <div class="step-marker">
+                                <span class="step-sq"></span>
+                                <span class="step-num">01</span>
+                            </div>
+                            <div class="step-body">
+                                <h3 class="step-title">Gosto de entender o negócio por trás do código.</h3>
+                                <p class="step-desc">Não sou a dev que só digita código sem pensar. Gosto de entender como a engrenagem da sua empresa funciona para construir o sistema do jeito certo.</p>
+                            </div>
+                        </div>
+                        <div class="sobre-step reveal d1">
+                            <div class="step-marker">
+                                <span class="step-sq"></span>
+                                <span class="step-num">02</span>
+                            </div>
+                            <div class="step-body">
+                                <h3 class="step-title">Trabalho com o que funciona na vida real.</h3>
+                                <p class="step-desc">Tenho experiência criando aplicações web e mobile, cuidando tanto da parte que o cliente vê quanto dos bastidores (banco de dados, integrações e segurança) para nada engasgar.</p>
+                            </div>
+                        </div>
+                        <div class="sobre-step reveal d2">
+                            <div class="step-marker">
+                                <span class="step-sq"></span>
+                                <span class="step-num">03</span>
+                            </div>
+                            <div class="step-body">
+                                <h3 class="step-title">Código é só metade do trabalho.</h3>
+                                <p class="step-desc">Não adianta o sistema ser super inteligente se ninguém consegue usar. Me importo de verdade com a experiência de quem vai mexer na plataforma no dia a dia.</p>
+                            </div>
+                        </div>
+                        <div class="sobre-step reveal d3">
+                            <div class="step-marker">
+                                <span class="step-sq"></span>
+                                <span class="step-num">04</span>
+                            </div>
+                            <div class="step-body">
+                                <h3 class="step-title">Tecnologia sem dor de cabeça.</h3>
+                                <p class="step-desc">Mais do que colocar o projeto no ar, o foco está em entregar uma base limpa e segura: um sistema estável, feito para durar e que não dá dor de cabeça a longo prazo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sobre-photo reveal d2">
+                        <div class="photo-frame">
+                            <div class="photo-inner">
+                                <img src="./assets/images/about-me.png" alt="Leticia Lopes" loading="lazy" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="carreira">
+            <div class="inner">
+                <div class="sec-tag-row reveal">
+                    <h2 class="sec-title">Carreira.</h2>
+                    <span class="sec-tag">// Trajetória</span>
+                </div>
+                <p class="sec-sub reveal d1">
+                    Minha trajetória profissional e os projetos em que botei a mão na massa.                
+                </p>
+
+                <div class="timeline">
+                    <div class="tl-item reveal">
+                        <div class="tl-dot-wrap">
+                            <div class="tl-dot current"></div>
+                        </div>
+                        <div class="glass tl-card">
+                            <div class="tl-top">
+                                <div class="tl-company">iRede</div>
+                                <span class="tl-period active">fev/2026 → atual</span>
+                            </div>
+                            <div class="tl-role">Engenheira de Software Pleno</div>
+                            <p class="tl-desc">
+                                Atuação Full Stack no desenvolvimento de microsserviços, cobrindo desde as APIs e integrações na AWS até as interfaces e testes automatizados. Também participo ativamente da revisão de PRs para manter o padrão de código do time.
+                            </p>
+                            <div class="tl-tags">
+                                <span class="tl-tag">React</span>
+                                <span class="tl-tag">TypeScript</span>
+                                <span class="tl-tag">Java (Spring Boot)</span>
+                                <span class="tl-tag">AWS (Textract/SQS/SNS)</span>
+                                <span class="tl-tag">Docker</span>
+                                <span class="tl-tag">Azure DevOps</span>
+                                <span class="tl-tag">SonarQube</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tl-item reveal d1">
+                        <div class="tl-dot-wrap">
+                            <div class="tl-dot"></div>
+                        </div>
+                        <div class="glass tl-card">
+                            <div class="tl-top">
+                                <div class="tl-company">OnProfit</div>
+                                <span class="tl-period">jan/2025 → fev/2026</span>
+                            </div>
+                            <div class="tl-role">Desenvolvedora de Software Pleno</div>
+                            <p class="tl-desc">
+                                Trabalhei na plataforma de checkout, atuando como full stack. Buscava garantir que a aplicação fosse rápida, estável e consistente, cuidando do código para que ficasse organizado e fácil de manter ao longo do tempo.
+                            </p>
+                            <div class="tl-tags">
+                                <span class="tl-tag">Vue.js</span>
+                                <span class="tl-tag">Laravel</span>
+                                <span class="tl-tag">Docker</span>
+                                <span class="tl-tag">REST API</span>
+                                <span class="tl-tag">Figma</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tl-item reveal d2">
+                        <div class="tl-dot-wrap">
+                            <div class="tl-dot"></div>
+                        </div>
+                        <div class="glass tl-card">
+                            <div class="tl-top">
+                                <div class="tl-company">Solution TI</div>
+                                <span class="tl-period">jan/2024 → jan/2025</span>
+                            </div>
+                            <div class="tl-role">Desenvolvedora de Software Júnior</div>
+                            <p class="tl-desc">
+                                Atuei no desenvolvimento Full Stack de 5 projetos da empresa. Fiquei responsável pela estrutura e organização de um aplicativo em React Native e pela criação de APIs RESTful utilizando Java e Grails (padrão MVC). No dia a dia, também cuidei da integração com AWS S3 para armazenamento de arquivos e gerenciei o banco MySQL via DataGrip. Trabalhei em parceria com POs, QAs e designers sob a metodologia Scrum, usando Jira, Docker, Insomnia e Bitbucket.
+                            </p>
+                            <div class="tl-tags">
+                                <span class="tl-tag">React</span>
+                                <span class="tl-tag">Typescript</span>
+                                <span class="tl-tag">Javascript</span>
+                                <span class="tl-tag">Java (Grails)</span>
+                                <span class="tl-tag">Docker</span>
+                                <span class="tl-tag">MySQL</span>
+                                <span class="tl-tag">AWS</span>
+                                <span class="tl-tag">Tailwind CSS</span>
+                                <span class="tl-tag">Figma</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tl-item reveal d3">
+                        <div class="tl-dot-wrap">
+                            <div class="tl-dot"></div>
+                        </div>
+                        <div class="glass tl-card">
+                            <div class="tl-top">
+                                <div class="tl-company">Solution TI</div>
+                                <span class="tl-period">fev/2023 → dez/2023</span>
+                            </div>
+                            <div class="tl-role">Estagiária em Desenvolvimento de Software</div>
+                            <p class="tl-desc">
+                                Participei do desenvolvimento de 3 projetos, atuando tanto no front-end quanto no back-end. Desenvolvi APIs em Java e Grails, criei componentes com Svelte para sistemas internos e ajudei a padronizar o design system para melhorar a experiência do usuário. Também usei Tailwind, Bootstrap, MySQL, Postman e Git/Bitbucket no dia a dia.
+                            </p>
+                            <div class="tl-tags">
+                                <span class="tl-tag">HTML</span>
+                                <span class="tl-tag">CSS</span>
+                                <span class="tl-tag">Bootstrap</span>
+                                <span class="tl-tag">Java (Grails)</span>
+                                <span class="tl-tag">MySQL</span>
+                                <span class="tl-tag">Tailwind CSS</span>
+                                <span class="tl-tag">Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stack" class="section-light">
+            <div class="inner">
+                <div class="sec-tag-row reveal">
+                    <h2 class="sec-title">Stack completa.</h2>
+                    <span class="sec-tag">// Tecnologias</span>
+                </div>
+                <p class="sec-sub reveal d1">
+                    As principais tecnologias que fazem parte do meu fluxo de trabalho.
+                </p>
+
+                <div class="stack-table">
+                    <div class="stack-row reveal">
+                        <span class="sk-cat">Frontend</span>
+                        <div class="tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Tailwind CSS</span>
+                        </div>
+                    </div>
+                    <div class="stack-row reveal d1">
+                        <span class="sk-cat">Backend</span>
+                        <div class="tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">Laravel</span>
+                            <span class="tag">REST API</span>
+                            <span class="tag">Webhooks</span>
+                        </div>
+                    </div>
+                    <div class="stack-row reveal d2">
+                        <span class="sk-cat">Banco de Dados</span>
+                        <div class="tags">
+                            <span class="tag">MySQL</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">SQLite</span>
+                        </div>
+                    </div>
+                    <div class="stack-row reveal">
+                        <span class="sk-cat">Mobile</span>
+                        <div class="tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Expo</span>
+                        </div>
+                    </div>
+                    <div class="stack-row reveal d1">
+                        <span class="sk-cat">Design</span>
+                        <div class="tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Prototipação</span>
+                        </div>
+                    </div>
+                    <div class="stack-row reveal d2">
+                        <span class="sk-cat">DevOps &amp; Infra</span>
+                        <div class="tags">
+                            <span class="tag">Git</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Azure DevOps</span>
+                            <span class="tag">Vercel</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">CI/CD</span>
+                        </div>
+                    </div>
+                    <div class="stack-row reveal">
+                        <span class="sk-cat">Tools</span>
+                        <div class="tags">
+                            <span class="tag">Jira</span>
+                            <span class="tag">Postman</span>
+                            <span class="tag">VS Code</span>
+                            <span class="tag">IntelliJ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="processo">
+            <div class="inner">
+                <div class="sec-header-center reveal">
+                    <span class="sec-tag">// Processo</span>
+                    <h2 class="sec-title">Do briefing ao deploy.</h2>
+                </div>
+                <p class="sec-sub reveal d1">
+                    A ideia é que você não fique no escuro em nenhum momento. O projeto é dividido em etapas claras para você acompanhar a evolução de perto.
+                </p>
+
+                <div class="flow-wrap">
+                    <div class="flow-node reveal">
+                        <span class="fn-num">01</span>
+                        <div class="fn-box"><i class="fas fa-comments"></i></div>
+                        <h3 class="fn-label">Briefing</h3>
+                        <p class="fn-desc">Entendo objetivos, escopo e restrições do projeto</p>
+                    </div>
+
+                    <div class="flow-connector" aria-hidden="true">
+                        <div class="flow-connector-line"></div>
+                    </div>
+
+                    <div class="flow-node reveal d1">
+                        <span class="fn-num">02</span>
+                        <div class="fn-box"><i class="fas fa-search"></i></div>
+                        <h3 class="fn-label">Discovery</h3>
+                        <p class="fn-desc">Pesquiso referências, defino stack e arquitetura</p>
+                    </div>
+
+                    <div class="flow-connector" aria-hidden="true">
+                        <div class="flow-connector-line"></div>
+                    </div>
+
+                    <div class="flow-node reveal d2">
+                        <span class="fn-num">03</span>
+                        <div class="fn-box"><i class="fas fa-pen-nib"></i></div>
+                        <h3 class="fn-label">Design</h3>
+                        <p class="fn-desc">Prototipo no Figma com foco em UX e identidade</p>
+                    </div>
+
+                    <div class="flow-connector" aria-hidden="true">
+                        <div class="flow-connector-line"></div>
+                    </div>
+
+                    <div class="flow-node reveal d3">
+                        <span class="fn-num">04</span>
+                        <div class="fn-box"><i class="fas fa-code"></i></div>
+                        <h3 class="fn-label">Build</h3>
+                        <p class="fn-desc">Desenvolvo front, back e infraestrutura integrados</p>
+                    </div>
+
+                    <div class="flow-connector" aria-hidden="true">
+                        <div class="flow-connector-line"></div>
+                    </div>
+
+                    <div class="flow-node reveal d4">
+                        <span class="fn-num">05</span>
+                        <div class="fn-box"><i class="fas fa-rocket"></i></div>
+                        <h3 class="fn-label">Deploy</h3>
+                        <p class="fn-desc">Subo em produção, testo e monitoro a entrega</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos">
+            <div class="inner">
+                <div class="sec-tag-row reveal">
+                    <h2 class="sec-title">Serviços.</h2>
+                    <span class="sec-tag">// O que entrego</span>
+                </div>
+                <p class="sec-sub reveal d1">
+                    O trabalho cobre todo o ciclo do projeto. Isso garante consistência tanto na interface quanto na estrutura técnica, sem que nenhuma parte se perca pelo caminho.
+                </p>
+
+                <div class="svcs-list">
+                    <div class="svc-row glass reveal">
+                        <div class="svc-row-id">
+                            <span class="svc-num">01</span>
+                            <h3 class="svc-title">Sites &amp; Landing Pages</h3>
+                        </div>
+                        <div class="svc-body">
+                            <p class="svc-desc">Sites institucionais, portfólios e páginas de venda com design único, rápidos e otimizados para conversão.</p>
+                            <ul class="svc-items">
+                                <li>Protótipo de telas</li>
+                                <li>HTML/CSS/JS ou Next.js</li>
+                                <li>SEO técnico e performance</li>
+                            </ul>
+                        </div>
+                        <div class="svc-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Figma</span>
+                            <span class="tag">SEO</span>
+                        </div>
+                    </div>
+
+                    <div class="svc-row glass reveal d1">
+                        <div class="svc-row-id">
+                            <span class="svc-num">02</span>
+                            <h3 class="svc-title">Sistemas Web</h3>
+                        </div>
+                        <div class="svc-body">
+                            <p class="svc-desc">Plataformas, dashboards e sistemas internos com arquitetura limpa e interface profissional.</p>
+                            <ul class="svc-items">
+                                <li>Autenticação e controle de acesso</li>
+                                <li>Dashboards analíticos</li>
+                                <li>Integrações com APIs externas</li>
+                            </ul>
+                        </div>
+                        <div class="svc-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                    </div>
+
+                    <div class="svc-row glass reveal d2">
+                        <div class="svc-row-id">
+                            <span class="svc-num">03</span>
+                            <h3 class="svc-title">Apps Mobile</h3>
+                        </div>
+                        <div class="svc-body">
+                            <p class="svc-desc">Aplicativos iOS e Android com React Native, prontos para publicação nas lojas.</p>
+                            <ul class="svc-items">
+                                <li>Cross-platform iOS + Android</li>
+                                <li>Integração com APIs e backends</li>
+                                <li>Publicação nas lojas</li>
+                            </ul>
+                        </div>
+                        <div class="svc-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Expo</span>
+                        </div>
+                    </div>
+
+                    <div class="svc-row glass reveal">
+                        <div class="svc-row-id">
+                            <span class="svc-num">04</span>
+                            <h3 class="svc-title">APIs &amp; Integrações</h3>
+                        </div>
+                        <div class="svc-body">
+                            <p class="svc-desc">APIs RESTful, integrações com sistemas legados e serviços de terceiros, automações e webhooks.</p>
+                            <ul class="svc-items">
+                                <li>REST documentadas</li>
+                                <li>Integrações com pagamento, CRM, ERP</li>
+                                <li>Automações com webhooks</li>
+                            </ul>
+                        </div>
+                        <div class="svc-tags">
+                            <span class="tag">REST</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Webhooks</span>
+                        </div>
+                    </div>
+
+                    <div class="svc-row glass reveal d1">
+                        <div class="svc-row-id">
+                            <span class="svc-num">05</span>
+                            <h3 class="svc-title">Consultoria Técnica</h3>
+                        </div>
+                        <div class="svc-body">
+                            <p class="svc-desc">Code review, arquitetura de software, escolha de stack e mentoria para times e desenvolvedores.</p>
+                            <ul class="svc-items">
+                                <li>Revisão e refatoração de código</li>
+                                <li>Definição de arquitetura</li>
+                                <li>Mentoria e pair programming</li>
+                            </ul>
+                        </div>
+                        <div class="svc-tags">
+                            <span class="tag">Architecture</span>
+                            <span class="tag">Code Review</span>
+                        </div>
+                    </div>
+
+                    <div class="svc-row glass reveal d2">
+                        <div class="svc-row-id">
+                            <span class="svc-num">06</span>
+                            <h3 class="svc-title">SaaS do Zero</h3>
+                        </div>
+                        <div class="svc-body">
+                            <p class="svc-desc">Do conceito ao produto em produção: discovery, design, MVP, escala e operação contínua.</p>
+                            <ul class="svc-items">
+                                <li>Discovery e definição de produto</li>
+                                <li>Desenvolvimento front + back + infra</li>
+                                <li>Pagamentos, onboarding e retenção</li>
+                            </ul>
+                        </div>
+                        <div class="svc-tags">
+                            <span class="tag">Full Stack</span>
+                            <span class="tag">SaaS</span>
+                            <span class="tag">Cloud</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="inner">
+                <div class="ct-wrap">
+                    <div class="glass ct-card reveal">
+                        <h2 class="ct-title">
+                            Vamos conversar?
+                        </h2>
+                        <p class="ct-desc">
+                            Tem um projeto em mente? Me manda uma mensagem, eu respondo o mais rápido possível.
+                        </p>
+
+                        <div class="ct-links">
+                            <a href="mailto:contato@theleticialopes.com" class="clink">
+                                <i class="fas fa-envelope"></i> E-mail
+                            </a>
+                            <a href="https://instagram.com/the.leticialopes" target="_blank" class="clink">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                            <a href="https://linkedin.com/" target="_blank" class="clink">
+                                <i class="fab fa-linkedin-in"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/leticialopess" target="_blank" class="clink">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+
+                        <a href="https://wa.me/5521979168064?text=Ol%C3%A1%2C%20Leticia!%20Vi%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener" class="btn-main">
+                            <i class="fab fa-whatsapp"></i> Enviar mensagem 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta-final">
+            <div class="cta-inner">
+                <span class="cta-eyebrow reveal">Próximo passo</span>
+                <h2 class="cta-headline reveal d1">
+                    <span class="line-white">Sua ideia merece</span><br />
+                    <span class="line-grad">existir de verdade.</span>
+                </h2>
+                <p class="cta-sub reveal d2">
+                    Seu projeto não precisa ficar apenas no papel. Transformamos a sua visão em um produto digital completo, pronto para acompanhar o crescimento do seu negócio.
+                </p>
+                <div class="cta-btns reveal d3">
+                    <a href="mailto:contato@theleticialopes.com" class="btn-main-lg">
+                        Vamos começar <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#servicos" class="btn-ghost-lg">
+                        Ver serviços <i class="fas fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="foot-wrap">
+                <p class="foot-copy">© 2026 · <a href="#">Leticia Lopes</a></p>
+                <nav class="foot-nav">
+                    <a href="#sobre">Sobre</a>
+                    <a href="#carreira">Carreira</a>
+                    <a href="#stack">Stack</a>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+                <p class="foot-right">leticialopess · GitHub</p>
+            </div>
+        </footer>
+
+        <script src="./script.js"></script>
     </body>
 </html>

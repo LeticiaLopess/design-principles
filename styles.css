@@ -1438,7 +1438,8 @@ footer {
     .btn-main-lg, .btn-ghost-lg { width: 100%; justify-content: center; }
     .foot-wrap { grid-template-columns: 1fr; text-align: center; gap: .8rem; }
     .foot-right { text-align: center; }
-    .foot-nav { justify-content: center; }
+    .foot-nav { justify-content: center; gap: .4rem 0; width: 100%; }
+    .foot-nav a { font-size: .78rem; width: 33.33%; text-align: center; }
     .tl-item {
         gap: 1.5rem;
     }

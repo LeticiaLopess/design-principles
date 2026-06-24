@@ -17,7 +17,7 @@
     --sans:         'Geist', system-ui, sans-serif;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 
 body {
     background: var(--bg);
@@ -1399,7 +1399,7 @@ footer {
     #nav {
         justify-content: space-between;
         padding: .85rem 1.2rem;
-        width: 100vw;
+        width: 100%;
         position: fixed;
         overflow: visible;
     }

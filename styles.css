@@ -58,19 +58,19 @@ body {
 }
 .orb-1 {
     width: 700px; height: 700px;
-    background: radial-gradient(circle, rgba(253,85,29,.14) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(253,85,29,.14) 0%, rgba(253,85,29,.04) 50%, rgba(253,85,29,0) 70%);
     top: -260px; right: -260px;
     animation: float-a 9s ease-in-out infinite;
 }
 .orb-2 {
     width: 550px; height: 550px;
-    background: radial-gradient(circle, rgba(255,138,92,.07) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255,138,92,.07) 0%, rgba(255,138,92,.02) 50%, rgba(255,138,92,0) 70%);
     bottom: 120px; left: -180px;
     animation: float-b 11s ease-in-out infinite;
 }
 .orb-3 {
     width: 420px; height: 420px;
-    background: radial-gradient(circle, rgba(253,85,29,.09) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(253,85,29,.09) 0%, rgba(253,85,29,.02) 50%, rgba(253,85,29,0) 70%);
     bottom: -100px; right: 80px;
     animation: float-a 14s ease-in-out infinite reverse;
 }
@@ -321,9 +321,9 @@ section { position: relative; z-index: 1; }
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(ellipse 65% 70% at 10% 55%, rgba(253,85,29,.38) 0%, transparent 55%),
-        radial-gradient(ellipse 50% 55% at 80% 45%, rgba(255,138,92,.18) 0%, transparent 55%),
-        radial-gradient(ellipse 40% 40% at 50% 100%, rgba(253,85,29,.15) 0%, transparent 60%);
+        radial-gradient(ellipse 65% 70% at 10% 55%, rgba(253,85,29,.38) 0%, rgba(253,85,29,.18) 28%, rgba(253,85,29,.05) 52%, rgba(253,85,29,0) 75%),
+        radial-gradient(ellipse 50% 55% at 80% 45%, rgba(255,138,92,.18) 0%, rgba(255,138,92,.07) 32%, rgba(255,138,92,.02) 55%, rgba(255,138,92,0) 78%),
+        radial-gradient(ellipse 40% 40% at 50% 100%, rgba(253,85,29,.15) 0%, rgba(253,85,29,.05) 35%, rgba(253,85,29,.01) 58%, rgba(253,85,29,0) 80%);
     pointer-events: none;
     z-index: 0;
 }
@@ -492,9 +492,11 @@ section { position: relative; z-index: 1; }
     position: absolute;
     inset: -100px;
     background: radial-gradient(
-        ellipse 70% 60% at 50% 60%,
-        rgba(253,85,29,.28) 0%,
-        transparent 65%
+        ellipse 45% 40% at 50% 60%,
+        rgba(253,85,29,.22) 0%,
+        rgba(253,85,29,.07) 35%,
+        rgba(253,85,29,.02) 58%,
+        rgba(253,85,29,0) 75%
     );
     pointer-events: none;
     z-index: -1;
